@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="rock-paper-scissor.css">
+<title>rock-paper-scissor</title>
+</head>
+
+
+<body>
+    <div class = "whole-body">
+        <div class="title"><p class="titles">rock-paper-scissor</p></div>
+        <div class="container">
+            <button class = "buttons" id = "rock" onclick="
+                showChoice('rock');
+                result('rock',computerChoice());
+                "><img class = "images"src = "images/rock.jpg"></button>
+            <button class = "buttons" id = "paper" onclick="
+            showChoice('paper');
+            result('paper',computerChoice())
+            "><img class = "images" src="images/paper.jpg"></button>
+            <button class = "buttons" id = "scissor" onclick="
+            showChoice('scissor');
+            result('scissor',computerChoice())
+            "><img class = "images" src="images/scissor.png"></button>
+
+        </div>
+
+        <div class="results">
+            <div class="choices">
+                <div class="myChoice">
+                        <p>your choice</p>
+                </div>
+                <div class="computerChoice">
+                        <p>computer Choice</p>
+
+                </div>
+            </div>
+            
+            <div class="result">
+                <p class = "announcer">result: </p>
+                <p class="score">Score</p>                
+            </div>
+
+        </div>
+    </div>
+    <script src="rock-paper-scissor.js"></script>
+</body>
+
+
+
+</html>
